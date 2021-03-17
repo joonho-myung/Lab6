@@ -1,0 +1,30 @@
+     <!DOCTYPE html>
+     <html>
+     <head>
+                 <title>AngularJS MVC Architecture</title>
+                 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     </head>
+     <body>
+                 <div ng-app="app1" ng-controller = "cnt1">
+                          <p>{{ fname }}</p>
+                 </div>
+
+                 <script>
+                 var a = angular.module("app1", []);
+                 a.controller("cnt1", function($scope) {
+                      
+                      $scope.fname = "John"; 
+                      $scope.lname = "Smith";     
+                         
+                });
+                 </script>
+     </body>
+     </html>
+ 
+ <!--
+ ----------------------------------
+ Output:
+ 
+     John
+ 
+ -->
